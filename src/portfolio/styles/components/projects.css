@@ -1,0 +1,113 @@
+.projects-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
+    z-index: 3;
+}
+.project-card {
+    background-color: #112240;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 10px;
+    transition: all .4s ease;
+    position: relative;
+    z-index: 3;
+    height: 290px ;
+}
+
+.project-header {
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
+    align-items: center;
+    color: #a8b2d1;
+}
+
+.project-card .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.project-card .buttons a:hover {
+    color: var(--greenC);
+}
+
+.project-card .project-header .file {
+    font-size: 50px;
+    color: var(--greenC);
+}
+
+.projectTitle {
+    color: white;
+}
+
+.project-card  .description p {
+    line-height: 1.4;
+}
+
+.techs {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) !important;
+}
+
+.project-card:hover .projectTitle {
+    color: var(--greenC);
+}
+
+.buttonShow {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.buttonShow button {
+    border-radius: 4px;
+    color: var(--greenC);
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid var(--greenC);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttonShow button:hover,
+.buttonShow button:focus {
+    background-color: rgba(100,255,218,0.1);
+}
+
+/* // Light */
+
+.light .project-card {
+    background-color: #5DADE2 !important;
+}
+
+.light .project-card .project-header .file {
+    color: #ff9a3e;
+}
+
+.light .project-card .buttons a:hover {
+    color: #ff9a3e !important;
+}
+
+.light .project-card:hover .projectTitle {
+    color: #ff9a3e !important;
+}
+
+.light .buttonShow button {
+    color: #e9791a;
+    border: 1px solid #ff9a3e;
+}
+
+.light .buttonShow button:hover {
+    background-color: rgb(233, 121, 26, .4) !important;
+}

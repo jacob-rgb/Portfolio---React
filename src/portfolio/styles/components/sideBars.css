@@ -1,0 +1,86 @@
+li,ul {
+    list-style: none;
+}
+
+.sideBars {
+    position: fixed;
+    bottom: 0;
+    color: #a8b2d1;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.side-left {
+    left: 50px;
+}
+
+.side-left ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    gap: 14px;
+}
+
+.side-left ul::after,
+.side-right .email::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #a8b2d1 ;
+}
+
+.side-left li  {
+    transition: all .4s ease;
+}
+
+.side-left li i {
+    transition: all .4s ease;
+}
+
+.side-left li:hover i {
+    color: var(--greenC);
+    transform: translateY(-5px);
+}
+
+.side-right {
+    right: 40px;
+}
+
+.side-right .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.side-right .email a {
+    margin: 20px auto 10px 0;
+    padding: 10px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    transition: all .4s ease;
+}
+
+.side-right .email a:hover {
+    color: var(--greenC);
+}
+
+/* // Lights */
+
+.light .side-right .email a:hover {
+    color: #ff9a3e;
+}
+
+.light .side-left li:hover i {
+    color: #ff9a3e !important;
+}
+
+.light .side-left ul::after,
+.light .side-right .email::after {
+    background-color: #ff9a3e ;
+}

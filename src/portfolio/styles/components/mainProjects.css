@@ -1,0 +1,142 @@
+.main-card {
+    font-size: 15px;
+    position: relative;
+    margin: 80px 0;
+    position: relative;
+    z-index: 3;
+}
+
+.main-card .main-card-cont {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.main-card .main-card-cont .image {
+    flex-basis: 400px;
+    flex-grow: 6;
+    position: relative;
+    border-radius: 4px;
+}
+
+.main-card .main-card-cont .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    z-index: 2;
+    background-color: var(--greenC);
+    opacity: .6;
+    border-radius: 4px;
+    transition: all .4s ease;
+}
+
+.main-card .main-card-cont:hover .image::before {
+    opacity: 0;
+}
+
+.main-card .main-card-cont .image img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.main-card .main-card-cont .info {
+    flex-basis: 400px;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    position: relative;
+    z-index: 9;
+    transform: translateX(-40px);
+}
+
+.main-card .main-card-cont .info .infoHeader {
+    color: var(--greenC);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: end;
+}
+
+.main-card .main-card-cont .info .infoHeader .infoTitle {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.main-card .main-card-cont .info .description {
+   padding: 15px;
+   background-color: #112240;
+   border-radius: 4px;
+   position: relative;
+   z-index: 3;
+}
+
+.main-card .main-card-cont .info .description p {
+    line-height: 1.5;
+}
+
+.main-card .main-card-cont .info .tech {
+    text-align: end;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-card .main-card-cont .info .buttons {
+    font-size: 24px;
+    display: flex;
+    gap: 10px;
+    color: #ccd6f6;
+}
+
+.main-card .main-card-cont .info .buttons a {
+    transition: all .4s ease;
+}
+
+.main-card .main-card-cont .info .buttons a:hover {
+    color: var(--greenC);
+}
+
+/* Reverse Card */
+
+.reverseCard .main-card-cont {
+    flex-direction: row-reverse;
+}
+
+.reverseCard .main-card-cont .info {
+    align-items: flex-start;
+    transform: translateX(40px);
+}
+
+.reverseCard .main-card-cont .info .infoHeader {
+    text-align: start;
+}
+
+.reverseCard .main-card-cont .info .tech {
+    text-align: start;
+}
+
+/* // Light */
+
+.light .main-card .main-card-cont .info .description {
+    background-color: #5DADE2 !important;
+}
+
+.light .main-card .main-card-cont .image::before {
+    background-color:#ff9a3e ;
+}
+
+.light .main-card .main-card-cont .info .infoHeader span {
+    color: #ff9a3e;
+}
+
+.light .main-card .main-card-cont .info .infoHeader .infoTitle {
+    color: white;
+}
+
+

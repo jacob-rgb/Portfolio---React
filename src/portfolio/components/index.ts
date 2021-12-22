@@ -1,0 +1,9 @@
+export { Navbar } from "./Navbar";
+export { Works } from "./Works";
+export { MainProjects } from "./MainProjects";
+export { Projects } from "./Projects";
+export { Header } from "./Header";
+export { SideBars } from "./SideBars";
+export { About } from "./About";
+export { Loading } from "./Loading";
+export { Footer } from './Footer';
