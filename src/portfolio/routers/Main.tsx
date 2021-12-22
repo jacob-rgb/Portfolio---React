@@ -7,10 +7,10 @@ import Portfolio from "../Portfolio";
 export const Main = () => {
     return (
       <DataProvider>
-      <Routes>
-        <Route path="/" element={< Portfolio />} />
-        <Route path="*" element={< NotFound />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={< Portfolio />} />
+          <Route path="/*" element={< NotFound />} />
+        </Routes>
       </DataProvider>
     )
 }
