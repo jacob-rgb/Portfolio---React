@@ -45,6 +45,13 @@
     gap: 10px;
 }
 
+.links .optionsBtns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
 .links button  {
     font-family: 'Space Mono', monospace;
     color: #ccd6f6;
@@ -58,6 +65,11 @@
     max-width: 30px;
     background-color: #ccd6f6;
     border-radius: 100%;
+}
+
+.links #languageBtn img {
+    max-width: 30px;
+    
 }
 
 .links button:hover  {

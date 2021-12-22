@@ -2,7 +2,11 @@ import { useState } from 'react';
 import '../styles/components/works.css';
 import { SingleWork } from './SingleWork';
 
-export const Works = () => {
+interface Props {
+    language?: string;
+}
+
+export const Works = ({language = 'en'}: Props) => {
 
     
     const [work, setWork] = useState('work1');

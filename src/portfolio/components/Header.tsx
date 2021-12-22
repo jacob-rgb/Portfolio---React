@@ -1,8 +1,11 @@
 import { softScroll} from '../helpers/navbar/navbarHelpers';
 import Particles from "react-tsparticles";
 
+interface Props {
+  language?: string;
+}
 
-export const Header = () => {
+export const Header = ({language = 'en'}: Props) => {
 
     const particlesInit = (main:any) => {
       
@@ -99,11 +102,11 @@ export const Header = () => {
              detectRetina: true,
            }}
     />     
-        <span style={{animationDelay:"1.1s"}} className="animaTop mono fadeInBot">Hi, my name is</span>
+        <span style={{animationDelay:"1.1s"}} className="animaTop mono fadeInBot">{ language === 'en' ? 'Hi, my name is' : 'Hola, mi nombre es'}</span>
         <h4 style={{animationDelay:"1.3s"}} className="animaTop fadeInBot">Jacobo Ramírez.</h4>
-        <h4 style={{animationDelay:"1.5s"}} className="animaTop fadeInBot">I build things for the web.</h4>
-        <p style={{animationDelay:"1.7s"}} className="animaTop fadeInBot">I´m a fullstack developer with more than two years of experience building (and occasionally designin) exceptional digital experiences. </p>
-        <button style={{animationDelay:"1.8s"}} className="animaTop outlineBtn checkBtn fadeInBot" data-target="mainProjectS" onClick={softScroll}>Check my Works</button>
+        <h4 style={{animationDelay:"1.5s"}} className="animaTop fadeInBot">{ language === 'en' ? 'I build things for the web.' : 'Construyo experiencias web.'}</h4>
+        <p style={{animationDelay:"1.7s"}} className="animaTop fadeInBot">{ language === 'en' ? 'I´m a fullstack developer with more than two years of experience building (and occasionally designin) exceptional digital experiences.': 'Soy un fullstack developer con más de dos años de experiencia desarrollando (y en ocasiones diseñando) experiencias digitales excepcionales.'} </p>
+        <button style={{animationDelay:"1.8s"}} className="animaTop outlineBtn checkBtn fadeInBot" data-target="mainProjectS" onClick={softScroll}>{ language === 'en' ? 'Check My Works' : 'Ojea Mis Trabajos'}</button>
     </section>
     )
 }

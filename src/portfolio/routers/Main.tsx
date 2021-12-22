@@ -8,8 +8,8 @@ export const Main = () => {
     return (
       <DataProvider>
         <Routes>
-          <Route path="/" element={< Portfolio />} />
-          <Route path="/*" element={< NotFound />} />
+           <Route path="/" element={< Portfolio />} />
+          < Route path="*" element={< NotFound />} />
         </Routes>
       </DataProvider>
     )

@@ -9,6 +9,7 @@ export const Portfolio = () => {
 
     const context:any = useContext(DataContext);
     const [ theme, ] = context.theme;
+    const [ language, ] = context.language;
 
     const [loading, setLoading] = useState(true);
 
@@ -39,15 +40,15 @@ export const Portfolio = () => {
                 < Navbar />
                 < SideBars />
                 <div className="content">
-                    < Header />
+                    < Header language={language} />
                     <section className="about animaTop" id="aboutS">
-                        <h2 className="title"><span>01. </span>About me</h2>
-                        < About />
+                        <h2 className="title"><span>01. </span>{ language === 'en' ? 'About me' : 'Sobre mi'}</h2>
+                        < About language={language} />
                     </section>
                     <section className="experience" id="experienceS">
                         <div className="container">
-                           <h2 className="title animaTop"><span>02. </span>Where i've Worked</h2>
-                           < Works />
+                           <h2 className="title animaTop"><span>02. </span>{ language === 'en' ? "Where i've Worked" : 'Donde He Trabajado'}</h2>
+                           < Works language={language} />
                         </div>
                     </section>
                     <section className="mainProject" id="mainProjectS">

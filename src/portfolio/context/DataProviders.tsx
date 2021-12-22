@@ -15,6 +15,8 @@ export const DataProvider = (props:any) => {
     useEffect(() => {
         const themeLS:any = localStorage.getItem('theme');
         if(themeLS) setTheme(themeLS);
+        const languageLS:any = localStorage.getItem('language');
+        if(language) setLanguage(languageLS);
     }, [])
 
     return (
