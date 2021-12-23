@@ -42,7 +42,7 @@ export const Portfolio = () => {
                 <div className="content">
                     < Header language={language} />
                     <section className="about animaTop" id="aboutS">
-                        <h2 className="title"><span>01. </span>{ language === 'en' ? 'About me' : 'Sobre mi'}</h2>
+                        <h2 className="title"><span>01. </span>{ language === 'en' ? 'About me' : 'Sobre mí'}</h2>
                         < About language={language} />
                     </section>
                     <section className="experience" id="experienceS">
@@ -53,25 +53,25 @@ export const Portfolio = () => {
                     </section>
                     <section className="mainProject" id="mainProjectS">
                         <div className="container">
-                           <h2 className="title animaTop"><span>03. </span>Some Things I've Built</h2>
-                           < MainProjects />
+                           <h2 className="title animaTop"><span>03. </span>{ language === 'en' ? "Some Things I've Built" : 'Algunos Proyectos que he desarrollado'}</h2>
+                           < MainProjects language={language} />
                         </div>
                     </section>
     
                     <section className="projects">
                         <div className="container">
-                           <h2 className="subtitle animaTop">Other Noteworthy Projects</h2>
-                            <Projects />
+                           <h2 className="subtitle animaTop">{ language === 'en' ? 'Other Noteworthy Projects' : 'Otros Proyectos'}</h2>
+                            <Projects language={language} />
                         </div>
                     </section>
                     <section className="contact" id="contactS">
-                        <span className={`pretitle mono animaTop`}>04. What's Next ?</span>
-                        <h2 className={`animaTop`}>Get In Touch</h2>
-                        <p className={`animaTop`}>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-                        <a href="mailto:jacoboramirezrivera6@gmail.com" className="outlineBtn mono">Say Hello</a>
+                        <span className={`pretitle mono animaTop`}>04. { language === 'en' ? "What's Next" : 'Qué es lo siguiente'} ?</span>
+                        <h2 className={`animaTop`}>{ language === 'en' ? "Get In Touch" : 'Ponte en contacto'}</h2>
+                        <p className={`animaTop`}>{ language === 'en' ? "Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!" : 'Aunque ahora mismo no esté buscando nuevas oportunidades, mi bandeja de entrada está siempre abierta. Ya sea que tenga una pregunta o simplemente quiera saludar, ¡haré todo lo posible para responderle! '}</p>
+                        <a href="mailto:jacoboramirezrivera6@gmail.com" className="outlineBtn mono">{ language === 'en' ? 'Say Hello' : 'Saludar'}</a>
                     </section>
                 </div>
-                < Footer />
+                < Footer language={language} />
             </div>
             }
         </>

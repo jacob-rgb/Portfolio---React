@@ -2,7 +2,11 @@ import { SingleMainProject } from "./SingleMainProject";
 import { mainProjects } from '../data/projects';
 import '../styles/components/mainProjects.css';
 
-export const MainProjects = () => {
+interface Props {
+  language?: string;
+}
+
+export const MainProjects = ({language = 'en'}: Props) => {
     return (
         <div>
              {
@@ -16,7 +20,7 @@ export const MainProjects = () => {
                        demoUrl={project.demoUrl}
                        position={project.position}
                        >
-                     <p>{ project.description }</p>
+                     <p>{ language === 'en' ? project.description : project.descriptionEs }</p>
                    </SingleMainProject>
                  ))
              }

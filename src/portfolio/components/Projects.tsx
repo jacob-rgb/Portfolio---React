@@ -4,7 +4,11 @@ import '../styles/components/projects.css';
 import { Dispatch, SetStateAction, useState } from "react";
 import { mostrarElements } from "../helpers/portfolioHelpers";
 
-export const Projects = () => {
+interface Props {
+    language?: string;
+}
+
+export const Projects = ({ language='en'}: Props) => {
 
     const [projectsLimit, setProjectsLimit]:[number, Dispatch<SetStateAction<number>>] = useState(6)
 
@@ -23,7 +27,7 @@ export const Projects = () => {
         <>
         <div className="projects-container">
             {
-                projects.slice(0, projectsLimit).map( ({title, description, tech, gitUrl, demoUrl}, index) => (
+                projects.slice(0, projectsLimit).map( ({title, description, descriptionEs, tech, gitUrl, demoUrl}, index) => (
                     <Project 
                        key={ title }
                        title={ title }
@@ -32,13 +36,13 @@ export const Projects = () => {
                        demoUrl={ demoUrl }
                        delayAnimation={0.2 * index}
                       >
-                          <p>{ description }</p>
+                          <p>{ language === 'en' ? description :  descriptionEs}</p>
                    </Project>
                 ))
             }
         </div>
         <div className="buttonShow">
-            <button onClick={handleClick}>{ projectsLimit <=6 ? 'Show More' : 'Show Less'}</button>
+            <button onClick={handleClick}>{ projectsLimit <=6 ? `${language === 'en'? "Show More" : "Mostrar Más"}` : `${language === 'en' ? "Show Less" : "Mostrar Menos"}`}</button>
         </div>
         </>
     )

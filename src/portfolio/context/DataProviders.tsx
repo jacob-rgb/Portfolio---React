@@ -16,7 +16,7 @@ export const DataProvider = (props:any) => {
         const themeLS:any = localStorage.getItem('theme');
         if(themeLS) setTheme(themeLS);
         const languageLS:any = localStorage.getItem('language');
-        if(language) setLanguage(languageLS);
+        if(languageLS) setLanguage(languageLS);
     }, [])
 
     return (

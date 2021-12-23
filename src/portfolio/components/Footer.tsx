@@ -1,5 +1,8 @@
+interface Props {
+    language?:string;
+}
 
-export const Footer = () => {
+export const Footer = ({language = 'en'}: Props) => {
     return (
     <footer className="mono">
         <div className="media-box">
@@ -11,7 +14,7 @@ export const Footer = () => {
                     <li><a rel='noreferrer' href="https://www.linkedin.com/in/jacobo-ram%C3%ADrez-rivera-1a6b691b5/" target="_blank"><i className='bx bxl-linkedin' ></i></a></li>
             </ul>
         </div>
-        <p >Designed & Built by Jacobo Ramírez</p>
+        <p >{ language === 'en' ? 'Designed & Built by Jacobo Ramírez' : 'Diseñado y Desarrollado por Jacobo Ramírez'}</p>
     </footer>
     )
 }

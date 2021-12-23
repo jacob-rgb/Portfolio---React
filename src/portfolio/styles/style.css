@@ -354,7 +354,7 @@ footer .media-box ul li:hover i{
 /* // Light Theme */
 
 .light {
-    background-color: #85C1E9 !important;
+    background-color: #55a5db !important;
     color: white !important;
 }
 
@@ -545,9 +545,15 @@ footer .media-box ul li:hover i{
         display: flex !important;
     }
 
+    .links #themeBtn img,
+    .links #languageBtn img  {
+        max-width: 45px;
+    }
+    
     .light .navbar .links {
         background-color: #5DADE2;
     }
+
 
     .light .navbar .links #themeBtn img {
         background-color: rgb(7, 106, 255) !important;

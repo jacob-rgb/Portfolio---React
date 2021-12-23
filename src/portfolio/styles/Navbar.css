@@ -134,7 +134,7 @@
 /* // Light */
 
 .light .navbar {
-    background-color: rgb(93, 173, 226, .2) ;
+    background-color: rgba(50, 150, 216, 0.2) ;
 }
 
 .light .navbar .links button {

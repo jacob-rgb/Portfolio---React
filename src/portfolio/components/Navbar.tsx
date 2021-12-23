@@ -51,10 +51,10 @@ export const Navbar = () => {
             </div>
             <div className="links">
                 <div className="optionsBtns">
-                   <button id='themeBtn' type='button' onClick={handleThemebtnClick}><img src={theme === 'dark' ? bombillaOff : bombillaOn} alt="theme" /></button>
+                   <button id='themeBtn' type='button' onClick={handleThemebtnClick}><img src={theme === 'dark' ? bombillaOn : bombillaOff} alt="theme" /></button>
                    <button id='languageBtn' type='button' onClick={handleLanguagebtnClick}><img src={language === 'en' ? banderaEs : banderaEn} alt="theme" /></button>
                 </div>
-                <button type='button' onClick={softScroll} data-target="aboutS" style={{animationDelay:'.3s'}} className={`fadeInTop`}><span data-target="aboutS">01.</span>{ language === 'en' ? 'About' : 'Sobre Mi'}</button>
+                <button type='button' onClick={softScroll} data-target="aboutS" style={{animationDelay:'.3s'}} className={`fadeInTop`}><span data-target="aboutS">01.</span>{ language === 'en' ? 'About' : 'Sobre Mí'}</button>
                 <button type='button' onClick={softScroll} data-target="experienceS" style={{animationDelay:'.5s'}} className={`fadeInTop`}><span data-target="experienceS">02.</span>{ language === 'en' ? 'Experience' : 'Experiencia'}</button>
                 <button type='button' onClick={softScroll} data-target="mainProjectS" style={{animationDelay:'.7s'}} className={`fadeInTop`}><span data-target="mainProjectS">03.</span>{ language === 'en' ? 'Work' : 'Trabajos'}</button>
                 <button type='button' onClick={softScroll} data-target="contactS" style={{animationDelay:'.9s'}} className={`fadeInTop`}><span data-target="contactS">04.</span>{ language === 'en' ? 'Contact' : 'Contacto'}</button>
