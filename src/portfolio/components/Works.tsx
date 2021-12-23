@@ -36,7 +36,7 @@ export const Works = ({language = 'en'}: Props) => {
                       <p> <i className='bx bx-caret-right'></i> { language === ' en' ? 'Database design, development and deployment using technologies such as MySqlServer, Mongo Atlas, Clever Cloud, etc.': 'Diseño, desarrollo y despliegue de bases de datos usando tecnologías como MySQLServer, Mongo Atlas, Clever Cloud, etc.'} </p>
                 </SingleWork>
 
-                < SingleWork work={work} showIf='work3' title='El Relator S.L' date='2021-Present' >
+                < SingleWork work={work} showIf='work3' title='Noddus' date='2021-Present' >
                       <p> <i className='bx bx-caret-right'></i> { language === 'en' ? 'Write modern, performant, maintainable code for a diverse array of client and internal projects.' : 'Crear códigos modernos, optimizados y mantenibles para diversos clientes.'}</p>
                       <p> <i className='bx bx-caret-right'></i> { language === 'en' ? 'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Angular, Vue, NodeJs, Express and Nest.js' : 'Trabajar con variedad de lenguajes, plataformas y frameworks diferentes como Javascript, Typescript, Gatsby, React, Angular, Vue, NodeJs, Express and Nest.js.'} </p>
                       <p> <i className='bx bx-caret-right'></i> { language === 'en' ? 'Maintain contact with the design team to develop different projects in the most optimal way.' : 'Mantener el contacto con los diseñadores para desarrollar proyectos lo más optimizados posible.'}</p>
