@@ -24,7 +24,7 @@ export const mainProjects: MainProject[] = [
         title:'Manuel Rivera - Artist',
         tech:'Angular, Typescript, mongoDB, Mongo Atlas, Node.js, Express, Netlify',
         gitUrl:'https://github.com/jacob-rgb/Mr-website-angular-netlify',
-        demoUrl:'https://manuelrivera.netlify.app/',
+        demoUrl:'https://www.manuelrivera.es/',
         position:'left',
         description:'Corporate website of the Spanish artist and painter Manuel Rivera. Learn about the life and work of this great artist, member and founder of the "El Paso" group. Here you will find about his biography and his contribution to the world of art through videos, galleries and other interactive elements.',
         descriptionEs:'Sitio web corporativo del artista y pintor español Manuel Rivera. Aprende a cerca de la vida y el trabajo de este gran artista, miembro y fundado del grupo "El Paso". Aquí podrás encontrar a cerca de su biografía y su contribución al mundo del arte a través de videos, galeías y otos elementos interactivos'
