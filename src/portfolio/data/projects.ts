@@ -108,4 +108,20 @@ export const projects: Project[] = [
         demoUrl: 'https://sistema-de-colas-app.herokuapp.com/',
         tech: 'Heroku, NodeJs, Javascript, Sockets'
     },
+    {
+        title:'Tetris',
+        description:'The mythical Tetris game with which we have shared so many hours.',
+        descriptionEs:'El mítico juego del Tetris con el que hemos compartido tantas horas.',
+        gitUrl: 'https://github.com/jacob-rgb/Tetris-js',
+        demoUrl: 'https://jacob-rgb.github.io/Tetris-js/',
+        tech: 'Javascript, CSS3, HTML5'
+    },
+    {
+        title:'TRIVIDABO - Quiz Game',
+        description:'Question game with correction system and points. Do you know as much as you think you do? Prove it!',
+        descriptionEs:'Juego de preguntas con sistema de correción y puntos. ¿ Sabes tanto como te crees ? Demuéstralo !.',
+        gitUrl: 'https://github.com/jacob-rgb/Quiz-game-react',
+        demoUrl: 'https://trividabo-quitzgame.netlify.app/',
+        tech: 'Javascript, CSS3, HTML5, React, Jest, Node, Express, Heroku'
+    },
 ]

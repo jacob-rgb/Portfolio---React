@@ -26,17 +26,25 @@ export const About = ({language = 'en'}: Props) => {
                 <li><span><i className='bx bx-caret-right'></i></span> React</li>
                 <li><span><i className='bx bx-caret-right'></i></span> React Native</li>
                 <li><span><i className='bx bx-caret-right'></i></span> Angular</li>
-                <li><span><i className='bx bx-caret-right'></i></span> Ionic</li>
-                <li><span><i className='bx bx-caret-right'></i></span> Vue & Vuex</li>
+                <li><span><i className='bx bx-caret-right'></i></span> PWA & SSR</li>
                 <li><span><i className='bx bx-caret-right'></i></span> Node.js</li>
                 <li><span><i className='bx bx-caret-right'></i></span> Nest.js</li>
                 <li><span><i className='bx bx-caret-right'></i></span> Express</li>
                 <li><span><i className='bx bx-caret-right'></i></span> Web sockets</li>
                 <li><span><i className='bx bx-caret-right'></i></span> Webpack</li>
                 <li><span><i className='bx bx-caret-right'></i></span> HTML & CSS</li>
+                <li><span><i className='bx bx-caret-right'></i></span> Material Ui</li>
+                <li><span><i className='bx bx-caret-right'></i></span> PrimeNg</li>
+                <li><span><i className='bx bx-caret-right'></i></span> Bootstrap</li>
+                <li><span><i className='bx bx-caret-right'></i></span> Tailwind</li>
                 <li><span><i className='bx bx-caret-right'></i></span> Git & Github</li>
                 <li><span><i className='bx bx-caret-right'></i></span> mySQL, Postgres</li>
                 <li><span><i className='bx bx-caret-right'></i></span> MongoDB</li>
+                <li><span><i className='bx bx-caret-right'></i></span> GraphQL</li>
+                <li><span><i className='bx bx-caret-right'></i></span> Docker</li>
+                <li><span><i className='bx bx-caret-right'></i></span> Jest & Enzyme</li>
+                <li><span><i className='bx bx-caret-right'></i></span> Karma & Jasmine</li>
+                <li><span><i className='bx bx-caret-right'></i></span> Cypress</li>
             </ul>
         </div>
         <div className="col-4">

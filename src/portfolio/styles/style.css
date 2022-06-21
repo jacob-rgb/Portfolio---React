@@ -231,7 +231,7 @@ section {
 .about .col-8 .skills-box {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(3, minmax(140px, 200px));
     gap: 5px;
     font-size: 14px;
 }
@@ -569,6 +569,14 @@ footer .media-box ul li:hover i{
     .about .row .skills-box {
         justify-content: center;
         margin: 20px 0;
+    }
+
+    .about .col-8 .skills-box {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        gap: 5px;
+        font-size: 14px;
     }
 
 
