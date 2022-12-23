@@ -34,7 +34,7 @@ export const mainProjects: MainProject[] = [
         title:'Foro Neoland',
         tech:'Angular, markdown, typescript, mongoDb, mongoAtlas, Node.js, Express, Heroku',
         gitUrl:'https://github.com/jacob-rgb/proyecto-Foro',
-        demoUrl:'https://foro-app-jr.herokuapp.com/home',
+        demoUrl:'https://proyecto-foro.vercel.app/',
         position:'right',
         description:'A forum created to clarify and resolve doubts about topics such as web development, cybersecurity and other topics related to programming. Join us and do your bit to make this small community grow !',
         descriptionEs:'Un Foro creado para aclarar y resolver dudas y cuestiones a cerca del desarrollo web, ciberseguridad y otros temas relacionados a la programación. Únete a nosotros y haz tu contribución para hacer crecer a esta pequeña comunidad !'
@@ -44,7 +44,7 @@ export const mainProjects: MainProject[] = [
         title:'Urbans Ecommerce',
         tech:'React, Redux, Javascript, MySQL, SQLServer, Node.js, Express, Heroku',
         gitUrl:'https://github.com/jacob-rgb/react_ecommerce',
-        demoUrl:'https://urbancommerce.herokuapp.com/',
+        demoUrl:'https://urban-commerce.vercel.app/',
         position:'left',
         description:'Ecommerce interface dedicated to the sale of clothing and accessories. You have the possibility to become a member of this community and receive their latest notifications.',
         descriptionEs:'Interfaz de ecommerce dedicada a la venta de ropa y accesorios. Tienes la posibilidad de hacerte miembro de esta comunidad para recibir las últimas noticias.'
