@@ -69,35 +69,19 @@ export const projects: Project[] = [
         tech: 'Netlify, Angular, Typescript, Google Analytics, Bootstrap'
     },
     {
-        title:'J.Iscar - Psiclogy - Website',
-        description:'Corporate and functional design related to the world of educational psychology.',
-        descriptionEs:'Diseño corporativo y funcional dedicado al mundo de la piscología educacional.',
-        gitUrl: 'https://github.com/jacob-rgb/Jaime-Iscar-WebSite',
-        demoUrl: 'https://jiscarpsicologia.netlify.app/',
-        tech: 'Netlify, Angular, Typescript, Google Analytics, Canvas, Bootstrap'
-    },
-    {
         title:'Space Invaders - Game',
         description:'App in which you can play the mythical game Space-Invaders. Recall the old times !',
         descriptionEs:' App en la que puedes jugar al mítico juego de Space Invaders. Rememora los viejos tiempos !',
-        gitUrl: 'https://github.com/jacob-rgb/Space-Invaders-App',
-        demoUrl: 'https://space-invaders-jr.herokuapp.com/',
-        tech: 'Heroku, NodeJs, Canvas, Javascript'
-    },
-    {
-        title:'Animated Portfolio',
-        description:'Animated portfolio focused on the world of web development',
-        descriptionEs:'Portfolio animado dedicado al mundo del desarrollo web',
-        gitUrl: 'https://github.com/jacob-rgb/Portfolio',
-        demoUrl: 'https://portfolio-app-jr.herokuapp.com/',
-        tech: 'NodeJs, Heroku, Angular, Typescript, Bootstrap, MongoDB, Mongo Atlas'
+        gitUrl: 'https://github.com/jacob-rgb/space-invaders-client',
+        demoUrl: 'https://jacob-rgb.github.io/space-invaders-client/',
+        tech: 'Canvas, Javascript, css'
     },
     {
         title:'Weather App',
         description:'Small program that allows you to check the weather in different european cities.',
         descriptionEs:'Pequeño programa que permite comprobar el tiempo en diferentes ciudades europeas.',
-        gitUrl: 'https://github.com/jacob-rgb/app-weather',
-        demoUrl: 'https://app-weather-jr.herokuapp.com/',
+        gitUrl: 'https://github.com/jacob-rgb/weather-client',
+        demoUrl: 'https://jacob-rgb.github.io/weather-client/',
         tech: 'Heroku, NodeJs, Javascript, Axios'
     },
     {
